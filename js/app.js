@@ -4,7 +4,7 @@ angular
 
   function MainRouter($stateProvider, $urlRouterProvider){
     $stateProvider
-      .state('index', {
+      .state('home', {
         url: "/",
       })
       .state('sports',  {
