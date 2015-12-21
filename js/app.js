@@ -32,7 +32,7 @@ angular
           templateUrl: "business.html"
       })
       .state('twitter',  {
-          url: '/users/login/twitter',
+          url: '/',
           templateUrl: "twitter.html"
       })
       .state('category',  {
