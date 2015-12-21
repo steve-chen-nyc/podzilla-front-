@@ -8,27 +8,27 @@ angular
         url: "/",
       })
       .state('sports',  {
-          url: '/podcasts/sports',
+          url: '/',
           templateUrl: "sports.html"
       })
       .state('comedy',  {
-          url: '/podcasts/comedy',
+          url: '/',
           templateUrl: "comedy.html"
       })
       .state('technology',  {
-          url: '/podcasts/technology',
+          url: '/',
           templateUrl: "technology.html"
       })
       .state('feelinglucky',  {
-          url: '/podcasts/feelinglucky',
+          url: '/',
           templateUrl: "feelinglucky.html"
       })
       .state('ted',  {
-          url: '/podcasts/ted',
+          url: '/',
           templateUrl: "ted.html"
       })
       .state('business',  {
-          url: '/podcasts/business',
+          url: '/',
           templateUrl: "business.html"
       })
       .state('twitter',  {
