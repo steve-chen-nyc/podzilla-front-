@@ -39,7 +39,7 @@ function PodcastsController($http,$rootScope){
   // API call functions
 function getSports(){
   $http
-    .get('/podcasts/sports')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/sports')
     .then(function(res){
       self.sports = res.data.results
     })
@@ -47,7 +47,7 @@ function getSports(){
 
 function getComedy(){
   $http
-    .get('/podcasts/comedy')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/comedy')
     .then(function(res){
     self.comedy = res.data.results
     })
@@ -55,7 +55,7 @@ function getComedy(){
 
 function getTechnology(){
   $http
-    .get('/podcasts/technology')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/technology')
     .then(function(res){
     self.technology = res.data.results
     })
@@ -63,7 +63,7 @@ function getTechnology(){
 
 function getFeelingLucky(){
   $http
-    .get('/podcasts/feelinglucky')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/feelinglucky')
     .then(function(res){
     self.lucky = res.data.results
     })
@@ -71,7 +71,7 @@ function getFeelingLucky(){
 
 function getTed(){
   $http
-    .get('/podcasts/ted')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/ted')
     .then(function(res){
     self.ted = res.data.results
     })
@@ -79,7 +79,7 @@ function getTed(){
 
 function getBusiness(){
   $http
-    .get('/podcasts/business')
+    .get('https://warm-sea-7753.herokuapp.com/podcasts/business')
     .then(function(res){
     self.business = res.data.results
     })
@@ -92,7 +92,7 @@ function addTedPodcast(index){
     console.log(self.newPodcast)
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -109,7 +109,7 @@ function addTechnologyPodcast(index){
     console.log(self.newPodcast)
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -127,7 +127,7 @@ function addLuckyPodcast(index){
     console.log(self.newPodcast)
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -144,7 +144,7 @@ function addBusinessPodcast(index){
     console.log(self.newPodcast)
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -161,7 +161,7 @@ function addSportsPodcast(index){
     console.log(self.newPodcast)
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -178,7 +178,7 @@ function addPodcast(index){
     console.log(self.newPodcast);
   $http({
     method: 'PATCH',
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     data: {podcast: self.newPodcast,
            id_str: $rootScope.user.id_str},
     headers: {'Content-Type': 'application/json'}
@@ -193,12 +193,12 @@ function addPodcast(index){
   // PULLS USER DATA FROM SERVER
 function getTwitter(){
   $.ajax({
-    url: '/users/profile',
+    url: 'https://warm-sea-7753.herokuapp.com/users/profile',
     dataType: 'json',
     method: 'GET',
     headers: {
       "Access-Control-Allow-Credentials": true,
-      "Access-Control-Allow-Origin": "https://boiling-oasis-5780.herokuapp.com/"
+      "Access-Control-Allow-Origin": "https://warm-sea-7753.herokuapp.com"
     },
     crossDomain: true,
     xhrFields: {
