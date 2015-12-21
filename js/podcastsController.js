@@ -198,7 +198,7 @@ function getTwitter(){
     method: 'GET',
     headers: {
       "Access-Control-Allow-Credentials": true,
-      "Access-Control-Allow-Origin": "http://localhost:8080"
+      "Access-Control-Allow-Origin": "https://boiling-oasis-5780.herokuapp.com/"
     },
     crossDomain: true,
     xhrFields: {
