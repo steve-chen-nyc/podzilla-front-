@@ -6,6 +6,7 @@ angular
     $stateProvider
       .state('home', {
         url: "/",
+        templateUrl: "home.html"
       })
       .state('sports',  {
           url: '/podcasts/sports',
