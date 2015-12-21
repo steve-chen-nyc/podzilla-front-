@@ -5,7 +5,8 @@ angular
   function MainRouter($stateProvider, $urlRouterProvider){
     $stateProvider
       .state('index', {
-        url: "/"
+        url: "/",
+        templateUrl: "index.html"  
       })
       .state('sports',  {
           url: '/podcasts/sports',
