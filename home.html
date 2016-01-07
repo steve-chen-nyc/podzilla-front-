@@ -13,29 +13,22 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body ng-app="Podcasts">
 
-    <button id="demo-menu-lower-left"
-            class="mdl-button mdl-js-button mdl-button--icon">
-      <i class="material-icons">more_vert</i>
-    </button>
-
-    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-        for="demo-menu-lower-left">
-      <li class="mdl-menu__item"> <a ui-sref-active="active" ui-sref="home"> Home<a/></li>
-      <li class="mdl-menu__item"> <a ui-sref-active="active" ui-sref="twitter"> My Profile </a></li>
-      <li class="mdl-menu__item"><a ui-sref-active="active" ui-sref="category">Categories</a></li>
-    </ul>
+   <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">PODZILLA</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" ui-sref="index">Home</a>
+        <a class="mdl-navigation__link" ui-sref="category">Podcast Categories</a>
+        <a class="mdl-navigation__link" ui-sref="twitter">My Profile</a>
+      </nav>
+    </div>
+  </header>
 
     <section ui-view> </section>
-
-
-      <div class="main-container">
-        <h1 class="index_header"> PODZILLA </h1>
-        <a id="twitter" href="https://warm-sea-7753.herokuapp.com/users/login/twitter/" target="_blank"> <img src="./sign-in-with-twitter-gray.png"></a>
-      </div>
   </body>
 </html>

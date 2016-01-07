@@ -34,8 +34,6 @@ function PodcastsController($http,$rootScope){
   getTed();
   getBusiness();
 
-
-
   // API call functions
 function getSports(){
   $http
@@ -89,7 +87,6 @@ function getBusiness(){
   // FUNCTIONS TO ADD PODCASTS TO FAVORITES
 function addTedPodcast(index){
     self.newPodcast = self.ted[index];
-    console.log(self.newPodcast)
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -98,7 +95,6 @@ function addTedPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.newPodcast = {};
 }
@@ -106,7 +102,6 @@ function addTedPodcast(index){
 
 function addTechnologyPodcast(index){
     self.newPodcast = self.technology[index];
-    console.log(self.newPodcast)
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -115,7 +110,6 @@ function addTechnologyPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.newPodcast = {};
 }
@@ -124,7 +118,6 @@ function addTechnologyPodcast(index){
 
 function addLuckyPodcast(index){
     self.newPodcast = self.lucky[index];
-    console.log(self.newPodcast)
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -133,7 +126,6 @@ function addLuckyPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.newPodcast = {};
 }
@@ -141,7 +133,6 @@ function addLuckyPodcast(index){
 
 function addBusinessPodcast(index){
     self.newPodcast = self.business[index];
-    console.log(self.newPodcast)
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -150,7 +141,6 @@ function addBusinessPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.newPodcast = {};
 }
@@ -158,7 +148,6 @@ function addBusinessPodcast(index){
 
 function addSportsPodcast(index){
     self.newPodcast = self.sports[index];
-    console.log(self.newPodcast)
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -167,7 +156,6 @@ function addSportsPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.newPodcast = {};
 }
@@ -175,7 +163,6 @@ function addSportsPodcast(index){
 function addPodcast(index){
   //function for comedy podcasts
     self.newPodcast = self.comedy[index];
-    console.log(self.newPodcast);
   $http({
     method: 'PATCH',
     url: 'https://warm-sea-7753.herokuapp.com/users/profile',
@@ -184,7 +171,6 @@ function addPodcast(index){
     headers: {'Content-Type': 'application/json'}
   })
     .then(function(res){
-      console.log(res + 'was sent to database');
     })
     self.podcast = {};
 }
